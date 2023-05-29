@@ -92,7 +92,11 @@ def init_reflection():
 # ---------------------------start------------------------------
 def get_user_input():
     os.system('cls' if os.name == 'nt' else 'clear')
-    action = input("\nselect action:\n1) transition\n2) rotation\n3) resize\n4) reflection\nyour option: ")
+    print("previos values:")
+    for idx in range(sides):
+        print(f"-> i{idx}({x[idx]},{y[idx]})")
+    print("----------------")
+    action = input("select action:\n1) transition\n2) rotation\n3) resize\n4) reflection\nyour option: ")
     match action:
         case '1':
             init_transform()
