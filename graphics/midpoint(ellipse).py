@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import math
 
+
 plt.title("midpoint Algoritm")
 plt.xlabel("X-Axis")
 plt.ylabel("Y-Axis")
